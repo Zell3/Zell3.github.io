@@ -4,7 +4,7 @@ layout: default
 
 # FF2R CFGS
 
-**all cfg here is for tfoc server.**
+**all cfg here are used for tfoc server.**
 
 **some of them not mine. I just port it into rewrite.**
 
@@ -240,7 +240,7 @@ layout: default
 ### Dark Realm's Erandicator Abilities
 #### Dark Realm's Passive
 ```js
-"darkrealm_passive"
+"darkrealm_passive" // Ability name can't use suffixes, no multiple instances
 {
   // start round - melee
   // melee damage x (1 + (meleemultiplier * kills after round start))
@@ -275,21 +275,7 @@ layout: default
 
 * * *
 
-#### Dark Realm's Rage Do slot
-```js
-"darkrealm_rage" // Ability name can use suffixes
-{
-  "slot"      "0" // Ability Slot
-  "kill"      "5" // How many kills need to trigger that slot
-  "doslot"    "" // Slot that will be trigger
-
-  "plugin_name"	"ff2r_darkrealm" // Plugin Name
-}
-```
-
-* * *
-
-### Gentlemen / Spector
+### Gentlemen / Spector Abilities
 ```js
 "rage_specter" // Ability name can use suffixes
 {   
@@ -306,18 +292,15 @@ layout: default
 
 * * *
 
-### Gentlemen / Spector
+### Hack / "Dominated" Shiranui Abilities
 ```js
-"rage_specter" // Ability name can use suffixes
+"ability_shiranui"  // Ability name can't use suffixes, no multiple instances
 {   
-  "slot"         "0" // Ability Slot
-  "duration"     "6.0" // Duration
-  "range"        "800.0" 	// Range (leave blank to use default)
-  "message"      "You are now Gentmen's Henchman"
-  "lastman"      "true"			// prevent to change all player team if they no more player left in their team : true = yes false = no
-  "playerleft"   "3"			// how many player won't get team change (needed when lastman = true : default = 1)
-
-  "plugin_name"  "ff2r_specter"	// Plugin Name
+  "cost"      ""  // rage cost per use
+  "duration"  ""  // Time being hacked - 0 means forever
+  "lastman"   ""  // 1-If only one player disable hack ability 0-No disable
+  
+  "plugin_name"  "ff2r_shiranui"
 }
 ```
 
