@@ -4,10 +4,13 @@ layout: default
 
 # FF2R CFGS
 
+**all cfg here is for tfoc server.**
+
+**some of them not mine. I just port it into rewrite.**
+
 [Source file - TFOC INNER CIRCLE](https://github.com/Zell3/TFOC-INNER-CIRCLE)
 
 ### Rage Server Command
-
 ```js
 "rage_servercommand" // Ability name can use suffixes
   { 
@@ -157,7 +160,7 @@ layout: default
 
 #### Tweak Fog
 ```js
-"fog_fx" // Ability name can use suffixes
+"fog_fx" // Ability name can't use suffixes, no multiple instances
 {
   //colors
   "color1"      "0 0 0" // RGB colors
@@ -180,7 +183,7 @@ layout: default
 
 ### Special Mann up Lines
 ```js
-"special_mann_up_lines"  // Ability name can't use suffixes, no multiple instances
+"special_mann_up_lines" // Ability name can't use suffixes, no multiple instances
 {
   "plugin_name"    "ff2r_mann_up_abilities"    
 }
@@ -226,10 +229,95 @@ layout: default
 ```js
 "rage_doslot"	// Ability name can use suffixes
 {
-	"slot"        "0"			// Ability Slot
-	"delay"       "3.0"		// Delay before first use
-	"doslot"      "20"		// Trigger Slot
+  "slot"        "0" // Ability Slot
+  "delay"       "3.0" // Delay before first use
+  "doslot"      "20" // Trigger Slot
 
-	"plugin_name"	"ff2r_doslot"	// Plugin Name
+  "plugin_name"	"ff2r_doslot"	// Plugin Name
 }
 ```
+
+### Dark Realm's Erandicator Abilities
+#### Dark Realm's Passive
+```js
+"darkrealm_passive"
+{
+  // start round - melee
+  // melee damage x (1 + (meleemultiplier * kills after round start))
+  "meleemultiplier"   "0.05"
+	
+  // 5 kills - loose cannon
+  // loose cannon damage x (1 + (cannonmultiplier * kills after 5 kills))
+  "cannonmultiplier"  "0.05"      
+
+  // 12 kills - loose cannon now have big explosion
+
+  // 15 kills - all multiplier
+  // melee damage x (1 + (meleemultiplier * kills after round start) + (allmultiplier * kills after 15 kills))
+  // loose cannon damage x (1 + (cannonmultiplier * kills after 5 kills) + (allmultiplier * kills after 15 kills))
+  "allmultiplier"     "0.10"
+
+  "plugin_name"     	"ff2r_darkrealm"	// Plugin Name
+}
+```
+
+#### Dark Realm's Rage Do slot
+```js
+"darkrealm_rage" // Ability name can use suffixes
+{
+  "slot"      "0"
+  "kill"      "5" // How many kills need to trigger that slot
+  "doslot"    "" // Slot that will be trigger
+
+  "plugin_name"	"ff2r_darkrealm" // Plugin Name
+}
+```
+
+* * *
+
+#### Dark Realm's Rage Do slot
+```js
+"darkrealm_rage" // Ability name can use suffixes
+{
+  "slot"      "0" // Ability Slot
+  "kill"      "5" // How many kills need to trigger that slot
+  "doslot"    "" // Slot that will be trigger
+
+  "plugin_name"	"ff2r_darkrealm" // Plugin Name
+}
+```
+
+* * *
+
+### Gentlemen / Spector
+```js
+"rage_specter" // Ability name can use suffixes
+{   
+  "slot"         "0" // Ability Slot
+  "duration"     "6.0" // Duration
+  "range"        "800.0" 	// Range (leave blank to use default)
+  "message"      "You are now Gentmen's Henchman"
+  "lastman"      "true"			// prevent to change all player team if they no more player left in their team : true = yes false = no
+  "playerleft"   "3"			// how many player won't get team change (needed when lastman = true : default = 1)
+
+  "plugin_name"  "ff2r_specter"	// Plugin Name
+}
+```
+
+* * *
+
+### Gentlemen / Spector
+```js
+"rage_specter" // Ability name can use suffixes
+{   
+  "slot"         "0" // Ability Slot
+  "duration"     "6.0" // Duration
+  "range"        "800.0" 	// Range (leave blank to use default)
+  "message"      "You are now Gentmen's Henchman"
+  "lastman"      "true"			// prevent to change all player team if they no more player left in their team : true = yes false = no
+  "playerleft"   "3"			// how many player won't get team change (needed when lastman = true : default = 1)
+
+  "plugin_name"  "ff2r_specter"	// Plugin Name
+}
+```
+
