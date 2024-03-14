@@ -9,20 +9,20 @@ layout: default
 ### Rage Server Command
 
 ```js
-"rage_servercommand"		// Ability name can use suffixes
-{ 
-	"slot"					""		// ability slot
+	"rage_servercommand"        // Ability name can use suffixes
+    { 
+        "slot"             "" // Ability Slot
 
-	"distance"			""		// distance (work only mode is 0)
-	"duration"			""		// duration (time between excecute startcomm and end comm)
-	"startcommand"	""		// command
-	"startparam"		""		// parameter (ex. sm_blind @red 10 : '10' is parameter)
-	"endcommand"		""		// same with startcommand
-	"endparam"			""		// same with startparam
-	"mode"					""		// 0 = on player , 1 = on server , 2 = on boss , 3 = boss excecute
+        "distance"         "" // distance (work only mode is 0)
+        "duration"         "" // duration (time between excecute startcomm and end comm)
+        "startcommand"     "" // command
+        "startparam"       "" // parameter (ex. sm_blind @red 10 : '10' is parameter)
+        "endcommand"       "" // same with startcommand
+        "endparam"         "" // same with startparam
+        "mode"             "" // 0 = on player , 1 = on server , 2 = on boss , 3 = boss excecute
 
-	"plugin_name"	  "ff2r_servercommandrage"
-}
+        "plugin_name"     "ff2r_servercommandrage"
+    }
 ```
 
 * * *
