@@ -444,7 +444,6 @@ layout: default
 ```
 
 #### Visual Effect
-Effects:
 
 0 - extreme fish eye
 
