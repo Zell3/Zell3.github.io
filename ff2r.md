@@ -175,3 +175,61 @@ layout: default
   "plugin_name" "ff2r_fog"
 }
 ```
+
+* * *
+
+### Special Mann up Lines
+```js
+"special_mann_up_lines"  // Ability name can't use suffixes, no multiple instances
+{
+  "plugin_name"    "ff2r_mann_up_abilities"    
+}
+```
+
+* * *
+
+### Rage Projectile
+```js
+"rage_projectile" // Ability name can use suffixes
+{
+  "name"         "tf_projectile_rocket" // Projectile Name
+  "velocity"     "1100.0" // Velocity 
+  
+  //The following Arguments are only required if Projectile is not spell
+  "mindamage"    "" // min damage
+  "maxdamage"    "" // max damage
+  //"models"     "" // Overriden New Projectile Model
+  "crits"        "1" // -1:Random Crits, 1:Crit, 0:No Random Crits
+
+  "plugin_name"  "ff2r_castprojectile"    
+}
+```
+
+* * *
+
+### Revive Marker
+```js
+"special_revivemarker" // Ability name can't use suffixes, no multiple instances
+{
+  "lifetime"      "45.0" //  Marker Lifetime
+  "limit"         "3" //  Player Revive Limit
+  "condition"     "" //  Player Conditions When Respawn
+  "sound"         "1" //  1 = Play MvM Sounds, 0 = not
+		
+  "plugin_name"   "ff2r_revivemarker"
+} 
+```
+
+* * *
+
+### Rage Do Slot
+```js
+"rage_doslot"	// Ability name can use suffixes
+{
+	"slot"        "0"			// Ability Slot
+	"delay"       "3.0"		// Delay before first use
+	"doslot"      "20"		// Trigger Slot
+
+	"plugin_name"	"ff2r_doslot"	// Plugin Name
+}
+```
