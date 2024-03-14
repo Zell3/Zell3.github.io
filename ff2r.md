@@ -12,7 +12,7 @@ layout: default
 
 ### Rage Server Command
 ```js
-"rage_servercommand" // Ability name can use suffixes
+"rage_servercommand" // Ability name can use suffixes & prefixes
   { 
     "slot"             "" // Ability Slot
 
@@ -33,7 +33,7 @@ layout: default
 ### TFCond
 #### Charge TFCond
 ```js
-"charge_tfcondition" // Ability name can't use suffixes, no multiple instances
+"charge_tfcondition" // Ability name can't use suffixes or prefixes, no multiple instances
 {
   "arg0"        "1" // Charge slot can be 1 or 2
   "arg1"        "1.5" // Time to fully charge
@@ -70,7 +70,7 @@ layout: default
 
 #### Special TFCond
 ```js
-"special_tfcondition" // Ability name can't use suffixes, no multiple instances
+"special_tfcondition" // Ability name can't use suffixes or prefixes, no multiple instances
 {
   "slot"           "0" // Ability slot
   "selfconds"      "28 ; 32" // Conditions boss receives upon activation
@@ -99,7 +99,7 @@ layout: default
 
 #### Rage TFCond
 ```js
-"rage_tfcondition" // Ability name can use suffixes
+"rage_tfcondition" // Ability name can use suffixes & prefixes
 {
   "slot"          "0" // Ability slot
   "selfconds"     "5 ; 5.8" // Self conditions
@@ -114,7 +114,7 @@ layout: default
 
 #### Tweak TFCond
 ```js
-"tweak_tfcondition" // Ability name can't use suffixes, no multiple instances
+"tweak_tfcondition" // Ability name can't use suffixes or prefixes, no multiple instances
 {
   "selfconds"    "11 ; -1.0" // Self conditions
   "allyconds"    "5 ; 20.0" // Ally conditions
@@ -136,7 +136,7 @@ layout: default
 ### FOG
 #### Rage Fog
 ```js
-"rage_fog_fx" // Ability name can use suffixes
+"rage_fog_fx" // Ability name can use suffixes & prefixes
 {    
   "slot"        "0" // Ability slot
   "dalay"       "0" // Prefer using Doslot Abilities
@@ -160,7 +160,7 @@ layout: default
 
 #### Tweak Fog
 ```js
-"fog_fx" // Ability name can't use suffixes, no multiple instances
+"fog_fx" // Ability name can't use suffixes or prefixes, no multiple instances
 {
   //colors
   "color1"      "0 0 0" // RGB colors
@@ -183,7 +183,7 @@ layout: default
 
 ### Special Mann up Lines
 ```js
-"special_mann_up_lines" // Ability name can't use suffixes, no multiple instances
+"special_mann_up_lines" // Ability name can't use suffixes or prefixes, no multiple instances
 {
   "plugin_name"    "ff2r_mann_up_abilities"    
 }
@@ -193,7 +193,7 @@ layout: default
 
 ### Rage Projectile
 ```js
-"rage_projectile" // Ability name can use suffixes
+"rage_projectile" // Ability name can use suffixes & prefixes
 {
   "name"         "tf_projectile_rocket" // Projectile Name
   "velocity"     "1100.0" // Velocity 
@@ -212,7 +212,7 @@ layout: default
 
 ### Revive Marker
 ```js
-"special_revivemarker" // Ability name can't use suffixes, no multiple instances
+"special_revivemarker" // Ability name can't use suffixes or prefixes, no multiple instances
 {
   "lifetime"      "45.0" //  Marker Lifetime
   "limit"         "3" //  Player Revive Limit
@@ -227,7 +227,7 @@ layout: default
 
 ### Rage Do Slot
 ```js
-"rage_doslot"	// Ability name can use suffixes
+"rage_doslot"	// Ability name can use suffixes & prefixes
 {
   "slot"        "0" // Ability Slot
   "delay"       "3.0" // Delay before first use
@@ -240,7 +240,7 @@ layout: default
 ### Dark Realm's Erandicator Abilities
 #### Dark Realm's Passive
 ```js
-"darkrealm_passive" // Ability name can't use suffixes, no multiple instances
+"darkrealm_passive" // Ability name can't use suffixes or prefixes, no multiple instances
 {
   // start round - melee
   // melee damage x (1 + (meleemultiplier * kills after round start))
@@ -263,7 +263,7 @@ layout: default
 
 #### Dark Realm's Rage Do slot
 ```js
-"darkrealm_rage" // Ability name can use suffixes
+"darkrealm_rage" // Ability name can use suffixes & prefixes
 {
   "slot"      "0"
   "kill"      "5" // How many kills need to trigger that slot
@@ -277,7 +277,7 @@ layout: default
 
 ### Gentlemen / Spector Abilities
 ```js
-"rage_specter" // Ability name can use suffixes
+"rage_specter" // Ability name can use suffixes & prefixes
 {   
   "slot"         "0" // Ability Slot
   "duration"     "6.0" // Duration
@@ -294,7 +294,7 @@ layout: default
 
 ### Hack / "Dominated" Shiranui Abilities
 ```js
-"ability_shiranui"  // Ability name can't use suffixes, no multiple instances
+"ability_shiranui" // Ability name can't use suffixes or prefixes, no multiple instances
 {   
   "cost"      ""  // rage cost per use
   "duration"  ""  // Time being hacked - 0 means forever
@@ -304,3 +304,175 @@ layout: default
 }
 ```
 
+* * *
+
+### Aimbot
+```js
+"aimbot" // Ability name can use suffixes & prefixes
+{
+  "slot"         "0" // Ability Slot
+  "duration"    "8.0" // time of ambotakam      
+  "plugin_name" "ff2r_aimbot"
+}
+```
+
+* * *
+
+### Hook for player
+```js
+"hooks_for_players" // Ability name can't use suffixes or prefixes, no multiple instances
+{ 
+  "attributes"  "241 ; 0 ; 280 ; 26 ; 547 ; 0 ; 199 ; 0 ; 712 ; 1 ; 2025 ; 2 ; 2014 ; 1 ; 191 ; -7 ; 128 ; 1"
+  "quality"     "8"
+  "level"       "1"
+  "rank"        "21"
+  "show"        "1" // 0 = not show, 1 = show
+
+  "team"        "1" // Who should get a hook? (0 = Boss + Player, 1 = Players only, 2 = Boss only)
+
+  "plugin_name"   "ff2r_special_hooks"
+}	
+```
+
+* * *
+
+### Darthmule Condition
+```js
+"rage_condition" // Ability name can use suffixes & prefixes
+{
+  "slot"         "0" // Ability Slot
+  "condition"   "" // 0 IGNITE , 1 BLEED , 2 STRIP TO MELEE , 3 BONK STUN
+  "duration"    ""
+  "distance"    ""
+
+  "plugin_name" "ff2r_darthmule_stripped"
+}
+```
+
+* * *
+
+### Phatrages
+#### Ioncannon
+```js
+"rage_ioncannon" // Ability name can use suffixes & prefixes
+{
+  "slot"         "0" // Ability Slot 
+  "timer"       "" // Timer    (How long it takes for the ion cannon blast to hit it's target in seconds.) 
+  "radius"      "" // Blast Radius    (Blast radius in units.) 
+  "damage"      "" // Blast Damage    (Amount of damage delivered by the blast.) 
+  "aimmode"     "0" // Aim Mode     (0 = where boss is standing. 1 = where boss is looking.)
+  "rgba"        "0 0 0 255" // Colour
+
+  "plugin_name"	"ff2r_phatrages"  
+}
+```
+
+#### Delirium
+```js
+"rage_delirium" // Ability name can use suffixes & prefixes
+{
+  "slot"        "0" // Ability Slot
+  "range"       ""  //Range
+  "duration"    ""  //Duration
+
+  "plugin_name"	"ff2r_phatrages"  
+}
+```
+
+#### Hellfire
+```js
+"rage_hellfire" // Ability name can use suffixes & prefixes
+{ 
+  "slot"                "0" // Ability Slot
+  "sound"               "" // Sound (true = No flame sound. false = Play flame sound.)  
+  "damage"              "" // Damage (Amount of damage delivered by the initial fire blast.) 
+  "range"               "" // Range (Radius of fire blast.) 
+  "afterburn damage"    "" // Afterburn Damage (Amount of damage delivered by afterburn.) 
+  "afterburn duration"  "" // Afterburn Duration (Duration of afterburn in seconds.)
+
+  "plugin_name"         "ff2r_phatrages"  
+} 
+```
+
+#### Scaleboss
+```js
+"rage_scaleboss" // Ability name can use suffixes & prefixes
+{
+  "slot"        "0" // Ability Slot
+	"scale"			  "2.0" // Scale Factor (Resize the boss by this factor.) 
+	"duration"		"" // Duration (Duration of resized effect in seconds.)
+		
+	"plugin_name"	"ff2r_phatrages"  
+}
+```
+
+#### Scaleplayer
+```js
+"rage_scaleplayers" // Ability name can use suffixes & prefixes
+{
+  "slot"        "0" // Ability Slot
+  "scale"       "2.0" // Scale Factor (Resize players by this factor.) 
+  "duration"    "" // Duration (Duration of resized effect in seconds.) 
+  "range"       "" // Range (Range of resizing effect.)
+
+  "plugin_name"	"ff2r_phatrages"  
+}
+```
+
+#### Drown
+```js
+"rage_drown" // Ability name can use suffixes & prefixes
+{
+  "slot"        "0" // Ability Slot
+  "duration"    "15" // Duration (Duration of drowning effect in seconds.) 
+  "range"       "600" // Range (Range of drowning effect.)
+
+  "plugin_name"	"ff2r_phatrages"
+}
+```
+
+#### Explosion
+```js
+"rage_explosion" // Ability name can use suffixes & prefixes
+{
+  "slot"        "0" // Ability Slot
+  "damage"      "400" // Damage (Amount of damage delivered by fireball explosion) 
+  "range"       "400" // Range (Range of fireball explosion.)
+
+  "plugin_name"	"ff2r_phatrages"
+}
+```
+
+#### Visual Effect
+Effects:
+
+0 - extreme fish eye
+
+1 - central screen crunch
+
+2 - rainbow flashes
+
+3 - fire flashes
+
+4 - blue/green flashes
+
+5 - blue/green web
+
+6 - central fire ball
+
+7 - opaque golden madness
+
+8 - transparent tv static
+
+```js
+"rage_visualeffect" // Ability name can use suffixes & prefixes
+{
+  "effect"      "0" // Visual Effect (0-8 Choice of visual effect, see below.) 
+  "duration"    "10" // Duration (Duration of visual effect in seconds.)  
+  "range"       "600" // Range (Range of visual effect.)
+
+  "plugin_name"	"ff2r_phatrages"
+}
+```
+
+* * *
