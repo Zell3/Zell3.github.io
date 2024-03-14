@@ -1,5 +1,5 @@
 ---
-layout: ff2r
+layout: default
 ---
 
 # FF2R CFGS
