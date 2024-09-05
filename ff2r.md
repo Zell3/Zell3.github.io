@@ -7,6 +7,7 @@ layout: default
 **all cfg here are used for tfoc server.**
 
 **some of them not mine. I just port it into rewrite.**
+
 **so all credits goes to original creator**
 
 [Source file - TFOC FF2R SUBPLUGINS](https://github.com/Zell3/TFOC-INNER-CIRCLE)
