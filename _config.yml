@@ -1,6 +1,9 @@
 title: Zell Places
+title2: Team project.
 logo: /assets/img/logo.jpg
+logo2: /assets/img/logo2.png
 description: Zell darkest Dungeon.
+description2: Everything for team.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
