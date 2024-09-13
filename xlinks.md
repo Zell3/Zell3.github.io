@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: xlinks
 ---
 
 # XLinks Documentation
