@@ -5,7 +5,7 @@ layout: xlinks
 # Git Documentation
 
 ## For more Document information
-อ่านเรื่องเกี่ยวกับ Standard ได้ที่ : [git](https://zell3.github.io/xlinks)
+อ่านเรื่องเกี่ยวกับ Standard ได้ที่ : [xlinks](https://zell3.github.io/xlinks)
 
 ## Git Flows
 
